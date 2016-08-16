@@ -12,3 +12,11 @@ npm install
 npm start
 ```
 Your Globe is rendered using a frameless window and transparent background-color.
+
+
+
+## libraries Used
+electron 
+three js
+Realtime-webgl globe by [askmike](https://github.com/askmike/realtime-webgl-globe) 
+
