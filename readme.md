@@ -20,12 +20,12 @@ Your Globe is rendered using a frameless window and transparent background.
 
 ## libraries Used:
 
-* Electron 
-* Three js
-* Realtime-webgl globe by [askmike](https://github.com/askmike/realtime-webgl-globe) 
+      * Electron 
+      * Three js
+      * Realtime-webgl globe by [askmike](https://github.com/askmike/realtime-webgl-globe) 
 
 ## Todo
 
-* 1.Notify you when the ISS is overheaad or at a specific location.
-* 2.Create a tray icon or use electron position to place the globe at a specific region.
-* 3.Create a globe stand which can i can include some setup functions.
+     1. Notify you when the ISS is overheaad or at a specific location.
+     2. Create a tray icon or use electron position to place the globe at a specific region.
+     3. Create a globe stand which can i can include some setup functions.
