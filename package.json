@@ -1,7 +1,7 @@
 {
   "name": "iss_tracker",
   "version": "1.0.0",
-  "description": "p5.js + the magic of node.js",
+  "description": "A desktop app to track the ISS position ",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
