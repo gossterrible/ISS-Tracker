@@ -566,8 +566,8 @@ var Globe = function Globe(container, urls) {
 
       var div = document.getElementById('globe');
       var urls = {
-        //having a COr problem with image assets
-        earth: "../img/world.jpg",
+        //load image assets to use on the scene 
+    earth: "../img/world.jpg",
     bump:'../img/bump.jpg',
     specular: '../img/specular.jpg',
       }
@@ -576,7 +576,7 @@ var Globe = function Globe(container, urls) {
   // start it
   globe.init();
 
-  // random data
+  // get postion data and render ISS at position
   var drawRandomLevitatingBlock = function() {
     $.getJSON("http://api.open-notify.org/iss-now.json?callback=?", function(coords) {
                      latitude = coords.iss_position.latitude;
@@ -584,6 +584,7 @@ var Globe = function Globe(container, urls) {
              });
         var data = {
           color: '#FF0000',
+          //ISS size
           size: 5,
           lat: latitude,
           lon: longitude,
@@ -591,9 +592,11 @@ var Globe = function Globe(container, urls) {
         // center the globe to the position
         globe.center(data);
           setTimeout(function() {
+            //add ISS to scene
           globe.addBlock(data);
-
         }, 300);
+        //remove ISS from Scene after displaying(make the iss blink)
         globe.removeAllBlocks();
       }
-      setInterval(drawRandomLevitatingBlock, 2000);
+      //set interval to refresh ISS postion.
+setInterval(drawRandomLevitatingBlock, 2000);
